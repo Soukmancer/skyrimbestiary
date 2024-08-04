@@ -151,6 +151,9 @@ class BestiaryMenu extends MovieClip
 		ResistancePanel.Attr4._visible = false;
 		ResistancePanel.Attr5._visible = false;
 		ResistancePanel.Attr6._visible = false;
+		ResistancePanel.Attr7._visible = false;
+		ResistancePanel.Attr8._visible = false;
+		ResistancePanel.Attr9._visible = false;
 		WeaknessPanel.AttrCheck._visible = false;	
 		WeaknessPanel.Attr1._visible = false;	
 		WeaknessPanel.Attr2._visible = false;
@@ -158,6 +161,9 @@ class BestiaryMenu extends MovieClip
 		WeaknessPanel.Attr4._visible = false;
 		WeaknessPanel.Attr5._visible = false;
 		WeaknessPanel.Attr6._visible = false;
+		WeaknessPanel.Attr7._visible = false;
+		WeaknessPanel.Attr8._visible = false;
+		WeaknessPanel.Attr9._visible = false;
 		
 		KillcountWidget.textKillCount.text = "";
 		SummoncountWidget.textSummonCount.text = "";
@@ -1086,6 +1092,9 @@ class BestiaryMenu extends MovieClip
 				Panel.Attr4._visible = false;
 				Panel.Attr5._visible = false;
 				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
 				break;
 				
 			case 1:
@@ -1104,6 +1113,9 @@ class BestiaryMenu extends MovieClip
 				Panel.Attr4._visible = false;
 				Panel.Attr5._visible = false;
 				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
 				break;
 				
 			case 2:
@@ -1129,6 +1141,9 @@ class BestiaryMenu extends MovieClip
 					Panel.Attr6.gotoAndStop("normal");
 					Panel.Attr6.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
 				}
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
 				break;
 				
 			case 3:
@@ -1161,6 +1176,9 @@ class BestiaryMenu extends MovieClip
 				Panel.Attr4._visible = false;
 				Panel.Attr5._visible = false;
 				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
 				break;
 				
 			case 4:
@@ -1173,33 +1191,36 @@ class BestiaryMenu extends MovieClip
 					Panel.Attr0.gotoAndStop("normal");
 					Panel.Attr0.attachMovie(attributesList[0],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
 				}
-				Panel.Attr1._visible = true;
-				if(attributesList[1].substr(0,6) == "immune"){
-					Panel.Attr1.gotoAndStop("immune");
-					Panel.Attr1.attachMovie(attributesList[1].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
-				}else{
-					Panel.Attr1.gotoAndStop("normal");
-					Panel.Attr1.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
-				}
-				Panel.Attr2._visible = true;
-				if(attributesList[2].substr(0,6) == "immune"){
-					Panel.Attr2.gotoAndStop("immune");
-					Panel.Attr2.attachMovie(attributesList[2].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
-				}else{
-					Panel.Attr2.gotoAndStop("normal");
-					Panel.Attr2.attachMovie(attributesList[2],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
-				}
+				Panel.Attr1._visible = false;
+				Panel.Attr2._visible = false;
 				Panel.Attr3._visible = true;
-				if(attributesList[3].substr(0,6) == "immune"){
+				if(attributesList[1].substr(0,6) == "immune"){
 					Panel.Attr3.gotoAndStop("immune");
-					Panel.Attr3.attachMovie(attributesList[3].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+					Panel.Attr3.attachMovie(attributesList[1].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
 				}else{
 					Panel.Attr3.gotoAndStop("normal");
-					Panel.Attr3.attachMovie(attributesList[3],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+					Panel.Attr3.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
 				}
-				Panel.Attr4._visible = false;
+				Panel.Attr4._visible = true;
+				if(attributesList[2].substr(0,6) == "immune"){
+					Panel.Attr4.gotoAndStop("immune");
+					Panel.Attr4.attachMovie(attributesList[2].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr4.gotoAndStop("normal");
+					Panel.Attr4.attachMovie(attributesList[2],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
 				Panel.Attr5._visible = false;
 				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = true;
+				if(attributesList[3].substr(0,6) == "immune"){
+					Panel.Attr7.gotoAndStop("immune");
+					Panel.Attr7.attachMovie(attributesList[3].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr7.gotoAndStop("normal");
+					Panel.Attr7.attachMovie(attributesList[3],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
 				break;
 				
 			case 5:
@@ -1246,6 +1267,197 @@ class BestiaryMenu extends MovieClip
 				}
 				Panel.Attr5._visible = false;
 				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
+				break;
+				
+			case 6:
+				Panel.AttrCheck._visible = false;
+				Panel.Attr0._visible = true;
+				if(attributesList[0].substr(0,6) == "immune"){
+					Panel.Attr0.gotoAndStop("immune");
+					Panel.Attr0.attachMovie(attributesList[0].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr0.gotoAndStop("normal");
+					Panel.Attr0.attachMovie(attributesList[0],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr1._visible = true;
+				if(attributesList[1].substr(0,6) == "immune"){
+					Panel.Attr1.gotoAndStop("immune");
+					Panel.Attr1.attachMovie(attributesList[1].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr1.gotoAndStop("normal");
+					Panel.Attr1.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr2._visible = true;
+				if(attributesList[2].substr(0,6) == "immune"){
+					Panel.Attr2.gotoAndStop("immune");
+					Panel.Attr2.attachMovie(attributesList[2].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr2.gotoAndStop("normal");
+					Panel.Attr2.attachMovie(attributesList[2],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr3._visible = true;
+				if(attributesList[3].substr(0,6) == "immune"){
+					Panel.Attr3.gotoAndStop("immune");
+					Panel.Attr3.attachMovie(attributesList[3].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr3.gotoAndStop("normal");
+					Panel.Attr3.attachMovie(attributesList[3],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr4._visible = true;
+				if(attributesList[4].substr(0,6) == "immune"){
+					Panel.Attr4.gotoAndStop("immune");
+					Panel.Attr4.attachMovie(attributesList[4].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr4.gotoAndStop("normal");
+					Panel.Attr4.attachMovie(attributesList[4],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr5._visible = false;
+				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = true;
+				if(attributesList[5].substr(0,6) == "immune"){
+					Panel.Attr7.gotoAndStop("immune");
+					Panel.Attr7.attachMovie(attributesList[5].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr7.gotoAndStop("normal");
+					Panel.Attr7.attachMovie(attributesList[5],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr8._visible = false;
+				Panel.Attr9._visible = false;
+				break;
+				
+			case 7:
+				Panel.AttrCheck._visible = false;
+				Panel.Attr0._visible = true;
+				if(attributesList[0].substr(0,6) == "immune"){
+					Panel.Attr0.gotoAndStop("immune");
+					Panel.Attr0.attachMovie(attributesList[0].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr0.gotoAndStop("normal");
+					Panel.Attr0.attachMovie(attributesList[0],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr1._visible = true;
+				if(attributesList[1].substr(0,6) == "immune"){
+					Panel.Attr1.gotoAndStop("immune");
+					Panel.Attr1.attachMovie(attributesList[1].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr1.gotoAndStop("normal");
+					Panel.Attr1.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr2._visible = true;
+				if(attributesList[2].substr(0,6) == "immune"){
+					Panel.Attr2.gotoAndStop("immune");
+					Panel.Attr2.attachMovie(attributesList[2].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr2.gotoAndStop("normal");
+					Panel.Attr2.attachMovie(attributesList[2],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr3._visible = true;
+				if(attributesList[3].substr(0,6) == "immune"){
+					Panel.Attr3.gotoAndStop("immune");
+					Panel.Attr3.attachMovie(attributesList[3].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr3.gotoAndStop("normal");
+					Panel.Attr3.attachMovie(attributesList[3],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr4._visible = true;
+				if(attributesList[4].substr(0,6) == "immune"){
+					Panel.Attr4.gotoAndStop("immune");
+					Panel.Attr4.attachMovie(attributesList[4].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr4.gotoAndStop("normal");
+					Panel.Attr4.attachMovie(attributesList[4],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr5._visible = false;
+				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = false;
+				Panel.Attr8._visible = true;
+				if(attributesList[5].substr(0,6) == "immune"){
+					Panel.Attr8.gotoAndStop("immune");
+					Panel.Attr8.attachMovie(attributesList[5].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr8.gotoAndStop("normal");
+					Panel.Attr8.attachMovie(attributesList[5],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr9._visible = true;
+				if(attributesList[6].substr(0,6) == "immune"){
+					Panel.Attr9.gotoAndStop("immune");
+					Panel.Attr9.attachMovie(attributesList[6].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr9.gotoAndStop("normal");
+					Panel.Attr9.attachMovie(attributesList[6],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}		
+				break;
+			case 8:
+				Panel.AttrCheck._visible = false;
+				Panel.Attr0._visible = true;
+				if(attributesList[0].substr(0,6) == "immune"){
+					Panel.Attr0.gotoAndStop("immune");
+					Panel.Attr0.attachMovie(attributesList[0].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr0.gotoAndStop("normal");
+					Panel.Attr0.attachMovie(attributesList[0],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr1._visible = true;
+				if(attributesList[1].substr(0,6) == "immune"){
+					Panel.Attr1.gotoAndStop("immune");
+					Panel.Attr1.attachMovie(attributesList[1].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr1.gotoAndStop("normal");
+					Panel.Attr1.attachMovie(attributesList[1],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr2._visible = true;
+				if(attributesList[2].substr(0,6) == "immune"){
+					Panel.Attr2.gotoAndStop("immune");
+					Panel.Attr2.attachMovie(attributesList[2].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr2.gotoAndStop("normal");
+					Panel.Attr2.attachMovie(attributesList[2],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr3._visible = true;
+				if(attributesList[3].substr(0,6) == "immune"){
+					Panel.Attr3.gotoAndStop("immune");
+					Panel.Attr3.attachMovie(attributesList[3].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr3.gotoAndStop("normal");
+					Panel.Attr3.attachMovie(attributesList[3],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr4._visible = true;
+				if(attributesList[4].substr(0,6) == "immune"){
+					Panel.Attr4.gotoAndStop("immune");
+					Panel.Attr4.attachMovie(attributesList[4].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr4.gotoAndStop("normal");
+					Panel.Attr4.attachMovie(attributesList[4],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr5._visible = false;
+				Panel.Attr6._visible = false;
+				Panel.Attr7._visible = true;
+				if(attributesList[5].substr(0,6) == "immune"){
+					Panel.Attr7.gotoAndStop("immune");
+					Panel.Attr7.attachMovie(attributesList[5].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr7.gotoAndStop("normal");
+					Panel.Attr7.attachMovie(attributesList[5],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}
+				Panel.Attr8._visible = true;
+				if(attributesList[6].substr(0,6) == "immune"){
+					Panel.Attr8.gotoAndStop("immune");
+					Panel.Attr8.attachMovie(attributesList[6].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr8.gotoAndStop("normal");
+					Panel.Attr8.attachMovie(attributesList[6],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+					}
+				Panel.Attr9._visible = true;	
+				if(attributesList[7].substr(0,6) == "immune"){
+					Panel.Attr9.gotoAndStop("immune");
+					Panel.Attr9.attachMovie(attributesList[7].substr(7),"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}else{
+					Panel.Attr9.gotoAndStop("normal");
+					Panel.Attr9.attachMovie(attributesList[7],"icon1", this.getNextHighestDepth(), {_x:16,_y:14});
+				}		
 				break;
 		}
 	}
